@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#09090c">
   <title>Setup Lab · Carcross</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon.png?v=3">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -156,6 +156,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 8px;text-align:center}
 .kpi b{display:block;font-family:var(--disp);font-weight:800;font-size:22px;line-height:1.05}
 .kpi span{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut)}
+.kpi span{display:block;overflow-wrap:normal;word-break:normal}
+@media (max-width:430px){.kpis:not([style*="grid-template-columns"]) .kpi{padding:10px 4px}.kpis:not([style*="grid-template-columns"]) .kpi b{font-size:19px;white-space:nowrap}.kpis:not([style*="grid-template-columns"]) .kpi span{font-size:10px;letter-spacing:.03em}}
 
 /* parameter rows */
 .prm{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
